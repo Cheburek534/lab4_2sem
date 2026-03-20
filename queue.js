@@ -35,3 +35,20 @@ class BiDirectionalPriorityQueue {
     return result;
   }
 }
+
+const q = new BiDirectionalPriorityQueue();
+ 
+q.enqueue("low", 1);
+q.enqueue("high", 10);
+q.enqueue("mid", 5);
+q.enqueue("urgent", 9);
+ 
+console.log(q.peek("highest"));   
+console.log(q.peek("oldest"));   
+ 
+console.log(q.dequeue("highest")); 
+console.log(q.dequeue("lowest"));  
+console.log(q.dequeue("newest"));  
+console.log(q.dequeue("oldest"));  
+ 
+console.log(q.dequeue("highest")); 
